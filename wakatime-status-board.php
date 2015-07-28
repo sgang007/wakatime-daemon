@@ -73,7 +73,7 @@
 			return $dtF->diff($dtT)->format('%h:%i:%s');
 		}
 
-		$apikey = "<insert API key>";
+		$apikey = "a5e2dca9-b9b7-41b5-80b4-32774b2ca724";
 
 		$contents = file_get_contents('https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key='.$apikey);
 
