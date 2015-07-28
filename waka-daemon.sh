@@ -1,3 +1,3 @@
 #!/bin/bash
 
-notify-send --icon=gtk-info 'Waka Time Daemon Started'
+notify-send --icon=checkbox,terminal 'Waka Time Daemon Started'
