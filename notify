@@ -1,5 +1,13 @@
 #!/bin/bash
 
 RESOURCES='./resources'
-notify-send --icon=checkbox,terminal 'Waka Time Notification' 'Daemon started'
-aplay -q $RESOURCES/start.wav
+
+case "$1" in
+	1)	notify-send --icon=checkbox,terminal 'Waka Time Notification' 'Daemon started'
+		aplay -q $RESOURCES/start.wav
+		;;
+	2) 	notify-send --icon=checkbox,terminal 'Congrats!!' 'Your leaderboard rank is '$2 
+		aplay -q $RESOURCES/congrats.wav
+		;;
+	*)  echo "Invalid Option"
+esac
